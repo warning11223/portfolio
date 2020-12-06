@@ -1,0 +1,35 @@
+// main: ../style.less
+
+.social {
+  display: flex;
+  margin-bottom: 42px;
+  font-size: 40px;
+  i {
+    color: @gray;
+  }
+
+
+}
+.social__link {
+  margin-right: 10px;
+
+
+
+  i:hover {
+    color: @black;
+    background-color: @white;
+    transform: translateY(-5px);
+    transition: transform .2s linear, color .2s linear;
+  }
+}
+.social__photo {
+  position: absolute;
+  bottom: -1px;
+  right: 0;
+  z-index: 1;
+  width: 50%;
+
+  @media @tablet {
+    width: 70%;
+  }
+}
